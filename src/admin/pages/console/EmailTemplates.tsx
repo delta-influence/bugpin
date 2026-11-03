@@ -93,6 +93,7 @@ const TEMPLATE_TYPES: { value: EmailTemplateType; label: string; description: st
 
 const LOCALE_LABELS: Record<LocaleCode, string> = {
   en: 'English',
+  cs: 'Čeština',
   de: 'Deutsch',
   fr: 'Français',
   nl: 'Nederlands',

@@ -26,6 +26,7 @@ import type { AppSettings, LocaleCode, ProjectLanguageSettings } from '@shared/t
 
 const LOCALE_DISPLAY_LABELS: Record<LocaleCode, string> = {
   en: 'English',
+  cs: 'Čeština',
   de: 'Deutsch',
   fr: 'Français',
   nl: 'Nederlands',

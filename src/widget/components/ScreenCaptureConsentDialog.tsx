@@ -54,7 +54,7 @@ export const ScreenCaptureConsentDialog: FunctionComponent<ScreenCaptureConsentD
                 font-weight="700"
                 fill="#111"
               >
-                Allow this site to see your screen?
+                {t('screenCapture.preview.screenTitle')}
               </text>
 
               {/* Dropdown selector */}
@@ -79,7 +79,7 @@ export const ScreenCaptureConsentDialog: FunctionComponent<ScreenCaptureConsentD
                 font-size="9"
                 fill="#444"
               >
-                Use operating system settings
+                {t('screenCapture.preview.systemSettings')}
               </text>
 
               {/* Checkbox row */}
@@ -101,7 +101,7 @@ export const ScreenCaptureConsentDialog: FunctionComponent<ScreenCaptureConsentD
                 font-size="8"
                 fill="#777"
               >
-                Mute website notifications while sharing
+                {t('screenCapture.preview.muteNotifications')}
               </text>
 
               {/* Divider */}
@@ -127,7 +127,7 @@ export const ScreenCaptureConsentDialog: FunctionComponent<ScreenCaptureConsentD
                 fill="#444"
                 text-anchor="middle"
               >
-                Block
+                {t('screenCapture.preview.block')}
               </text>
 
               {/* Allow */}
@@ -143,7 +143,7 @@ export const ScreenCaptureConsentDialog: FunctionComponent<ScreenCaptureConsentD
                 font-weight="600"
                 text-anchor="middle"
               >
-                Allow
+                {t('screenCapture.preview.allow')}
               </text>
             </svg>
           </div>
@@ -176,7 +176,7 @@ export const ScreenCaptureConsentDialog: FunctionComponent<ScreenCaptureConsentD
                 font-weight="700"
                 fill="#111"
               >
-                Allow this site to see this tab?
+                {t('screenCapture.preview.tabTitle')}
               </text>
 
               {/* Subtitle */}
@@ -187,7 +187,7 @@ export const ScreenCaptureConsentDialog: FunctionComponent<ScreenCaptureConsentD
                 font-size="8"
                 fill="#777"
               >
-                The site will see this tab's contents.
+                {t('screenCapture.preview.tabDescription')}
               </text>
 
               {/* Tab preview card */}
@@ -237,7 +237,7 @@ export const ScreenCaptureConsentDialog: FunctionComponent<ScreenCaptureConsentD
                 fill="#444"
                 text-anchor="middle"
               >
-                Cancel
+                {t('dialog.buttons.cancel')}
               </text>
 
               {/* Allow */}
@@ -253,7 +253,7 @@ export const ScreenCaptureConsentDialog: FunctionComponent<ScreenCaptureConsentD
                 font-weight="600"
                 text-anchor="middle"
               >
-                Allow
+                {t('screenCapture.preview.allow')}
               </text>
             </svg>
           </div>

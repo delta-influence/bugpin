@@ -456,7 +456,7 @@ describe('App state transitions', () => {
     await flush();
 
     const toast = container.querySelector('[role="alert"]');
-    expect(toast?.textContent ?? '').toContain('submit failed');
+    expect(toast?.textContent ?? '').toContain('Failed to submit report');
 
     render(null, container);
     container.remove();

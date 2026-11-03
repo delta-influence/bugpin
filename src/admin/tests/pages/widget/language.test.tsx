@@ -24,6 +24,22 @@ function mockSettings(language: { mode: 'auto' | 'manual'; defaultLanguage: stri
 }
 
 describe('Widget Language page', () => {
+  it('allows selecting and saving Czech as the widget language', async () => {
+    const user = userEvent.setup();
+    mockSettings({ mode: 'manual', defaultLanguage: 'en' });
+    const putSpy = vi.spyOn(api, 'put').mockResolvedValue({ data: { success: true } });
+    renderWithProviders(<Language />);
+    const trigger = await screen.findByRole('combobox', { name: /default language/i });
+    await user.click(trigger);
+    await user.click(screen.getByRole('option', { name: 'Čeština' }));
+    await user.click(screen.getByRole('button', { name: /save changes/i }));
+    await waitFor(() =>
+      expect(putSpy).toHaveBeenCalledWith('/settings', {
+        language: { mode: 'manual', defaultLanguage: 'cs' },
+      })
+    );
+  });
+
   it('shows the stored default language instead of the placeholder', async () => {
     mockSettings({ mode: 'auto', defaultLanguage: 'de' });
 

@@ -23,6 +23,7 @@ export function normalizeLocale(input: unknown): LocaleCode | null {
 
   if (
     primary === 'en' ||
+    primary === 'cs' ||
     primary === 'de' ||
     primary === 'fr' ||
     primary === 'nl' ||

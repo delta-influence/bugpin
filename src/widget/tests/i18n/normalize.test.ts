@@ -2,6 +2,12 @@ import { describe, it, expect } from 'bun:test';
 import { normalizeLocale } from '../../i18n/normalize';
 
 describe('normalizeLocale', () => {
+  it('recognizes Czech language and regional tags', () => {
+    for (const tag of ['cs', 'cs-CZ', ' CS_cz ']) {
+      expect(normalizeLocale(tag)).toBe('cs');
+    }
+  });
+
   describe('supported primary tags', () => {
     it('normalizes each supported primary tag to itself', () => {
       expect(normalizeLocale('en')).toBe('en');
@@ -89,12 +95,11 @@ describe('normalizeLocale', () => {
       expect(normalizeLocale('pt-BR')).toBeNull();
     });
 
-    it('returns null for ru, ar, ko, pl, cs', () => {
+    it('returns null for ru, ar, ko, pl', () => {
       expect(normalizeLocale('ru')).toBeNull();
       expect(normalizeLocale('ar')).toBeNull();
       expect(normalizeLocale('ko')).toBeNull();
       expect(normalizeLocale('pl')).toBeNull();
-      expect(normalizeLocale('cs')).toBeNull();
     });
   });
 

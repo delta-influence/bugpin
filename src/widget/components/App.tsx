@@ -399,7 +399,7 @@ export const App: FunctionComponent<AppProps> = ({ config, deps }) => {
       } catch (error) {
         console.error('[BugPin] Failed to submit report:', error);
         setToast({
-          message: error instanceof Error ? error.message : t('toast.error.submit'),
+          message: t('toast.error.submit'),
           type: 'error',
         });
       } finally {

@@ -49,6 +49,13 @@ const nl: WidgetCatalog = {
   'screenCapture.browser.firefox': 'Firefox',
   'screenCapture.browser.chromeEdge': 'Chrome · Edge',
   'screenCapture.dontShowAgain': 'Dit niet meer tonen',
+  'screenCapture.preview.screenTitle': 'Allow this site to see your screen?',
+  'screenCapture.preview.systemSettings': 'Use operating system settings',
+  'screenCapture.preview.muteNotifications': 'Mute website notifications while sharing',
+  'screenCapture.preview.block': 'Block',
+  'screenCapture.preview.allow': 'Allow',
+  'screenCapture.preview.tabTitle': 'Allow this site to see this tab?',
+  'screenCapture.preview.tabDescription': "The site will see this tab's contents.",
   'screenCapture.back': 'Terug',
   'screenCapture.confirm': 'Schermafbeelding maken',
 

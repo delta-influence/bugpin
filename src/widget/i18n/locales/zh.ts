@@ -46,6 +46,13 @@ const zh: WidgetCatalog = {
   'screenCapture.browser.firefox': 'Firefox',
   'screenCapture.browser.chromeEdge': 'Chrome · Edge',
   'screenCapture.dontShowAgain': '不再显示',
+  'screenCapture.preview.screenTitle': 'Allow this site to see your screen?',
+  'screenCapture.preview.systemSettings': 'Use operating system settings',
+  'screenCapture.preview.muteNotifications': 'Mute website notifications while sharing',
+  'screenCapture.preview.block': 'Block',
+  'screenCapture.preview.allow': 'Allow',
+  'screenCapture.preview.tabTitle': 'Allow this site to see this tab?',
+  'screenCapture.preview.tabDescription': "The site will see this tab's contents.",
   'screenCapture.back': '返回',
   'screenCapture.confirm': '开始截图',
 

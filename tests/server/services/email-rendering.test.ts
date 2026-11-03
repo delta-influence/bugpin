@@ -1,21 +1,13 @@
 import { describe, it, expect } from 'bun:test';
 import { resolveTemplate } from '../../../src/server/services/email.service';
 import { templateService } from '../../../src/server/services/template.service';
-import {
-  applyBrandColor,
-  appendFooterToHtml,
-} from '../../../src/server/constants/email-templates';
+import { applyBrandColor, appendFooterToHtml } from '../../../src/server/constants/email-templates';
 import {
   getStatusLabel,
   getPriorityLabel,
   formatReportDate,
 } from '../../../src/server/i18n/labels';
-import type {
-  ReportPriority,
-  ReportStatus,
-  Report,
-  LocaleCode,
-} from '../../../src/shared/types';
+import type { ReportPriority, ReportStatus, Report, LocaleCode } from '../../../src/shared/types';
 
 const BRAND_COLOR = '#02658D';
 
@@ -91,6 +83,16 @@ function renderReporterStatusChange(
 }
 
 describe('translated email rendering', () => {
+  it('renders Czech confirmation copy, labels and dates without unresolved placeholders', () => {
+    const { subject, html } = renderReporterConfirmation('cs');
+    expect(subject).toContain('Vaše hlášení chyby bylo přijato');
+    expect(html).toContain('Hlášení přijato');
+    expect(html).toContain('V řešení');
+    expect(html).toContain('Vysoká');
+    expect(html).toContain('května');
+    expect(html).not.toMatch(/\{\{[^}]+\}\}/);
+  });
+
   describe('German reporter confirmation', () => {
     const { subject, html } = renderReporterConfirmation('de');
 

@@ -2,6 +2,7 @@ import type { LocaleCode } from '@shared/types';
 
 export const tooltipLauncherDefaults: Record<LocaleCode, string> = {
   en: 'Found a bug?',
+  cs: 'Našli jste chybu?',
   de: 'Bug gefunden?',
   fr: 'Vous avez trouvé un bug ?',
   nl: 'Bug gevonden?',

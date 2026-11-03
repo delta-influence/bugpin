@@ -61,6 +61,7 @@ const DEFAULT_PROJECT_LANGUAGE: ProjectLanguageSettings = {
 
 const LOCALE_DISPLAY_LABELS: Record<LocaleCode, string> = {
   en: 'English',
+  cs: 'Čeština',
   de: 'Deutsch',
   fr: 'Français',
   nl: 'Nederlands',

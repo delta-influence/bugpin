@@ -1,9 +1,10 @@
 // Locale Types
 
-export type LocaleCode = 'en' | 'de' | 'fr' | 'nl' | 'es' | 'it' | 'ja' | 'zh';
+export type LocaleCode = 'en' | 'cs' | 'de' | 'fr' | 'nl' | 'es' | 'it' | 'ja' | 'zh';
 
 export const SUPPORTED_LOCALES: readonly LocaleCode[] = [
   'en',
+  'cs',
   'de',
   'fr',
   'nl',

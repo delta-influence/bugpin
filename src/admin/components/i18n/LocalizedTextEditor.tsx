@@ -8,6 +8,7 @@ import type { LocaleCode, LocalizedString } from '@shared/types';
 
 const LOCALE_LABELS: Record<LocaleCode, string> = {
   en: 'English',
+  cs: 'Čeština',
   de: 'Deutsch',
   fr: 'Français',
   nl: 'Nederlands',

@@ -55,6 +55,7 @@ const TEST_REPORTER = {
 
 const LOCALE_OPTIONS: { code: string; label: string }[] = [
   { code: 'en', label: 'English' },
+  { code: 'cs', label: 'Čeština' },
   { code: 'de', label: 'Deutsch' },
   { code: 'fr', label: 'Français' },
   { code: 'nl', label: 'Nederlands' },

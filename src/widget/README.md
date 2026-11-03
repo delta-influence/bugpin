@@ -11,7 +11,7 @@ Embeddable visual bug reporting widget for web applications. Capture screenshots
 - **Lightweight** - Less than 175KB gzipped
 - **Dark Mode** - Automatic theme detection
 - **Responsive** - Works on all devices
-- **Multilingual** - Translated into 8 languages (English, German, French, Dutch, Spanish, Italian, Japanese, Simplified Chinese) with automatic detection from `<html lang>` or the visitor's browser
+- **Multilingual** - Translated into 9 languages (English, Czech, German, French, Dutch, Spanish, Italian, Japanese, Simplified Chinese) with automatic detection from `<html lang>` or the visitor's browser
 - **Framework Agnostic** - Works with React, Vue, Angular, Svelte, .NET, and more
 
 ## Installation
@@ -48,11 +48,11 @@ The widget automatically fetches its configuration from the BugPin server based 
 
 ### Optional Options
 
-| Option          | Type     | Description                                                                                                                     |
-| --------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `language`      | `string` | BCP 47 language code (e.g. `en`, `de`, `fr`, `nl`, `es`, `it`, `ja`, `zh`). Overrides auto-detection and the project's default. |
-| `reporterName`  | `string` | Prefills the editable reporter name field.                                                                                      |
-| `reporterEmail` | `string` | Prefills the editable reporter email field.                                                                                     |
+| Option          | Type     | Description                                                                                                                           |
+| --------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| `language`      | `string` | BCP 47 language code (e.g. `en`, `cs`, `de`, `fr`, `nl`, `es`, `it`, `ja`, `zh`). Overrides auto-detection and the project's default. |
+| `reporterName`  | `string` | Prefills the editable reporter name field.                                                                                            |
+| `reporterEmail` | `string` | Prefills the editable reporter email field.                                                                                           |
 
 ### Prefill Reporter Details
 
@@ -113,7 +113,9 @@ Diagnostic capture is fail-closed and server-controlled:
 
 ## Language
 
-The widget ships with translations for English, German, French, Dutch, Spanish, Italian, Japanese, and Simplified Chinese.
+Use `language: 'cs'` in `BugPin.init()` or `data-language="cs"` on the script tag to explicitly select Czech. Czech is also detected from `cs` / `cs-CZ` page and browser language settings. In the admin console, choose **Čeština** as the default widget language and **Manual (locked)** to use Czech for every visitor.
+
+The widget ships with translations for English, Czech, German, French, Dutch, Spanish, Italian, Japanese, and Simplified Chinese.
 
 By default, the active language is resolved in this order:
 

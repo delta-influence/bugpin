@@ -1,6 +1,7 @@
 import type { LocaleCode, ReportStatus, ReportPriority } from '@shared/types';
 
 export const statusLabels: Record<LocaleCode, Record<ReportStatus, string>> = {
+  cs: { open: 'Otevřeno', in_progress: 'V řešení', resolved: 'Vyřešeno', closed: 'Uzavřeno' },
   en: { open: 'Open', in_progress: 'In Progress', resolved: 'Resolved', closed: 'Closed' },
   de: { open: 'Offen', in_progress: 'In Bearbeitung', resolved: 'Gelöst', closed: 'Geschlossen' },
   fr: { open: 'Ouvert', in_progress: 'En cours', resolved: 'Résolu', closed: 'Fermé' },
@@ -12,6 +13,7 @@ export const statusLabels: Record<LocaleCode, Record<ReportStatus, string>> = {
 };
 
 export const priorityLabels: Record<LocaleCode, Record<ReportPriority, string>> = {
+  cs: { lowest: 'Nejnižší', low: 'Nízká', medium: 'Střední', high: 'Vysoká', highest: 'Nejvyšší' },
   en: { lowest: 'Lowest', low: 'Low', medium: 'Medium', high: 'High', highest: 'Highest' },
   de: {
     lowest: 'Sehr niedrig',

@@ -47,6 +47,13 @@ const ja: WidgetCatalog = {
   'screenCapture.browser.firefox': 'Firefox',
   'screenCapture.browser.chromeEdge': 'Chrome · Edge',
   'screenCapture.dontShowAgain': '次回から表示しない',
+  'screenCapture.preview.screenTitle': 'Allow this site to see your screen?',
+  'screenCapture.preview.systemSettings': 'Use operating system settings',
+  'screenCapture.preview.muteNotifications': 'Mute website notifications while sharing',
+  'screenCapture.preview.block': 'Block',
+  'screenCapture.preview.allow': 'Allow',
+  'screenCapture.preview.tabTitle': 'Allow this site to see this tab?',
+  'screenCapture.preview.tabDescription': "The site will see this tab's contents.",
   'screenCapture.back': '戻る',
   'screenCapture.confirm': '撮影',
 

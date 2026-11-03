@@ -1,6 +1,7 @@
 import type { LocaleCode } from '@shared/types';
 import type { WidgetCatalog, WidgetCatalogKey } from './catalog.js';
 import en from './locales/en.js';
+import cs from './locales/cs.js';
 import de from './locales/de.js';
 import fr from './locales/fr.js';
 import nl from './locales/nl.js';
@@ -16,6 +17,7 @@ type LocaleCatalog = WidgetCatalog | Partial<WidgetCatalog>;
 
 const catalogs: Record<LocaleCode, LocaleCatalog> = {
   en,
+  cs,
   de,
   fr,
   nl,
